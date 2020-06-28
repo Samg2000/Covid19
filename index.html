@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/queries.css">
     <link
       rel="shortcut icon"
       href="./assets/fevicon/virus.svg"
@@ -13,23 +15,214 @@
   </head>
   <body>
     <header>
-        <nav>
-          <div class="logo-container">
-            <img class="logo__image" src="./assets/fevicon/virus.svg" alt="" />
-            <p class="title">COVID19</p>
+      <nav>
+        <div class="logo-container animate-right">
+          <img class="logo__image" src="./assets/fevicon/virus.svg" alt="" />
+          <p class="title">COVID19</p>
+        </div>
+        <div class="hamburger-menu" >
+         <button onClick="hamburgerButton();"><i class="fa fa-bars"></i></button>
+          <div class="dropdown-list" id="dropdown-list">
+            <a class="link" href="#main-section">Home</a>
+            <a class="link" href="#contagion-section">Contagion</a>
+            <a class="link" href="#prevention-section">Prevention</a>
+            <a class="link" href="#symptoms-section">Symptoms</a>
+            <a class="link" href="#">Vital Links</a>
           </div>
-          <div class="nav__links">
-              <a class="link" href="#">Home</a>
-              <a class="link" href="#">Contagion</a>
-              <a class="link" href="#">Prevention</a>
-              <a class="link" href="#">Symptoms</a>
-              <a class="link" href="#">Vital Links</a>
-          </div>
-        </nav>
+        </div>
+        <div class="nav__links animate-left">
+          <a class="link" href="#main-section">Home</a>
+          <a class="link" href="#contagion-section">Contagion</a>
+          <a class="link" href="#prevention-section">Prevention</a>
+          <a class="link" href="#symptoms-section">Symptoms</a>
+          <a class="link" href="#">Vital Links</a>
+        </div>
+      </nav>
     </header>
     <section id="main-section" class="grid">
-        <div class="main-section__container vertical-flex"></div>
-        <div class="main-section__container"></div>
+      <div class="vertical-flex animate-right">
+        <div>
+          <span class="chip">Covid-19 Alert</span>
+        </div>
+        <div>
+          <span class="heading"
+            >Stay At Home Quarantine to stop corona virus</span
+          >
+        </div>
+        <div>
+          <span class="description"
+            >There is no specific medicine to prevent or treat coronavirus
+            Disease. People may need supportive care to</span
+          >
+        </div>
+        <div>
+          <a href="#" class="btn">Check Symptoms</a>
+        </div>
+      </div>
+      <div class="main-section__container center-item animate-left">
+        <img
+          class="svg-image"
+          src="./assets/images/StayHome.jpg"
+          alt=""
+          srcset="./assets/images/StayHome.svg"
+        />
+      </div>
+    </section>
+    <section id="virus-section" class="grid">
+      
+      <div class=" center-item">
+        <img
+          class="svg-image"
+          src="./assets/images/Coronavirus.jpg"
+          alt=""
+          srcset="./assets/images/Coronavirus.svg"
+        />
+      </div>
+      <div class="vertical-flex">
+        <div>
+          <span class="chip">What is Covid-19</span>
+        </div>
+        <div>
+          <span class="heading">Coronavirus</span>
+        </div>
+        <div>
+          <span class="description"
+            >Coronavirus disease (COVID-19) is an infectious disease caused by a
+            new virus. The disease causes respiratory illness (like the flu)
+            with symptoms such as a cough, fever, and in more severe cases,
+            difficulty breathing.
+          </span>
+        </div>
+        <div>
+          <span class="description"
+            >You can protect yourself by washing your hands frequently, avoiding
+            touching your face, and avoiding close contact (1 meter or 3 feet)
+            distances with who are unwell.</span
+          >
+        </div>
+        <div>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <section id="symptoms-section" class="grid">
+      <div class="vertical-flex show-on-scroll">
+        <div>
+          <span class="chip">Covid-19 Symptoms</span>
+        </div>
+        <div>
+          <span class="heading">What are the symptoms?</span>
+        </div>
+        <div>
+          <span class="description"
+            >COVID-19 symptoms range from mild to severe. It takes 2-14 days
+            after exposure for symptoms to develop. Symptoms may include:</span
+          >
+        </div>
+        <div class="list">
+          <div class=sub-list>
+             <span class="list-item">Cough</span>
+             <span class="list-item">Fever</span>
+             <span class="list-item">Respiratory Distress</span>
+          </div>
+           <div class=sub-list>
+             <span class="list-item">Breathing Problem</span>
+             <span class="list-item">Kidney Failue</span>
+             <span class="list-item">Headache</span>
+           </div>
+         </div>
+        <div>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        
+      </div>
+      <div class=" center-item">
+        <img
+          class="svg-image"
+          src="./assets/images/Symptoms.jpg"
+          alt=""
+          srcset="./assets/images/Symptoms.svg"
+        />
+      </div>
+    </section>
+    <section id="prevention-section" class="grid">
+      
+      <div class="center-item">
+        <img
+          class="svg-image"
+          src="./assets/images/FightCorona.jpg"
+          alt=""
+          srcset="./assets/images/FightCorona.svg"
+        />
+      </div>
+      <div class="vertical-flex">
+        <div>
+          <span class="chip">Covid-19 Prevention</span>
+        </div>
+        <div>
+          <span class="heading"
+            >Protecting yourself & others from COVID-19</span
+          >
+        </div>
+        <div>
+          <span class="description"
+            >You can reduce your chances of being infected or spreading COVID-19
+            by taking some simple precautions:</span
+          >
+        </div>
+        <div class="list">
+          <div class=sub-list>
+             <span class="list-item">Stay Home</span>
+             <span class="list-item">Keep A Safe Distance</span>
+             <span class="list-item"> Wash Hands Often</span>
+          </div>
+           <div class=sub-list>
+             <span class="list-item">Cover Your Cough</span>
+             <span class="list-item">SICK? Call The Helpline</span>
+    
+           </div>
+         </div>
+        <div>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <section id="contagion-section" class="grid">
+      <div class="vertical-flex">
+        <div>
+          <span class="chip">Covid-19 Contagion</span>
+        </div>
+        <div>
+          <span class="heading">How does virus spread?</span>
+        </div>
+        <div>
+          <span class="description"
+            >Coronavirus can be spread through multiple ways. Some of them are
+            as follows:</span
+          >
+        </div>
+        <div class="list">
+          <div class=sub-list>
+             <span class="list-item">Personal Contact</span>
+             <span class="list-item">Surface transmission</span>
+          </div>
+           <div class=sub-list>
+             <span class="list-item">Aerosolized transmission</span>
+             <span class="list-item">Contact With Contaminate Object</span>
+           </div>
+         </div>
+        <div>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+      <div class=" center-item">
+        <img
+          class="svg-image"
+          src="./assets/images/Contagion.jpg"
+          alt=""
+          srcset="./assets/images/Contagion.svg"
+        />
+      </div>
     </section>
     <noscript>Please enable JavaScript to view this page</noscript>
     <script src="./scripts/main-script.js" type="text/javascript"></script>

@@ -1,0 +1,48 @@
+@media only screen and (max-width:1280px){
+    html{
+        font-size:57.5%!important;
+    }
+    section.grid{
+        height:auto;
+        margin-bottom: 100px;
+    }
+    .svg-image{
+        width:80%;
+    }
+}
+
+@media only screen and (max-width:1140px){
+    body{
+        padding:0 10vw!important;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    html{
+        font-size:54.5%!important;
+    }
+    body {
+        padding:0 5vw!important;
+    }
+    section.grid{
+        margin-bottom: 150px;
+    }
+    .svg-image{
+        width:70%;
+    }
+}
+
+@media only screen and (max-width:740px){
+    section.grid{
+        grid-template-columns:1fr;
+    }
+    .svg-image{
+        width: 50%;
+    }
+    html{
+        font-size:51.5%!important;
+    }
+    .center-item{
+        grid-row: 1/2;
+    }
+}
