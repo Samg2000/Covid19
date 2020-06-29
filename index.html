@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/queries.css">
+    <link rel="stylesheet" href="./styles/animation.css">
     <link
       rel="shortcut icon"
       href="./assets/fevicon/virus.svg"
@@ -14,23 +15,23 @@
     <title>Covid19</title>
   </head>
   <body>
-    <header>
+    <header class="animate-bottom">
       <nav>
-        <div class="logo-container animate-right">
+        <div class="logo-container" >
           <img class="logo__image" src="./assets/fevicon/virus.svg" alt="" />
           <p class="title">COVID19</p>
         </div>
         <div class="hamburger-menu" >
-         <button onClick="hamburgerButton();"><i class="fa fa-bars"></i></button>
+         <a href="#" class="ham-btn" onClick="hamburgerButton();"><i class="fa fa-bars"></i></a>
           <div class="dropdown-list" id="dropdown-list">
-            <a class="link" href="#main-section">Home</a>
-            <a class="link" href="#contagion-section">Contagion</a>
-            <a class="link" href="#prevention-section">Prevention</a>
-            <a class="link" href="#symptoms-section">Symptoms</a>
-            <a class="link" href="#">Vital Links</a>
+            <a class="dropdown--link" href="#main-section">Home</a>
+            <a class="dropdown--link" href="#contagion-section">Contagion</a>
+            <a class="dropdown--link" href="#prevention-section">Prevention</a>
+            <a class="dropdown--link" href="#symptoms-section">Symptoms</a>
+            <a class="dropdown--link" href="#">Vital Links</a>
           </div>
         </div>
-        <div class="nav__links animate-left">
+        <div class="nav__links ">
           <a class="link" href="#main-section">Home</a>
           <a class="link" href="#contagion-section">Contagion</a>
           <a class="link" href="#prevention-section">Prevention</a>
