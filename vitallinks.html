@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="./styles/queries.css">
     <link rel="stylesheet" href="./styles/animation.css">
     <link
@@ -81,7 +81,11 @@
       .se{
           justify-content: space-evenly;
       }
+      .heading{
+          margin-bottom: 0 !important;
+      }
     .grid{
+        background: #fff !important;
     height: auto;
     margin-bottom: 0 !important;
 }
@@ -96,21 +100,21 @@
             <p class="title">COVID19</p>
           </div>
           <div class="hamburger-menu" >
-           <a href="#" class="btn btn--outlined" onClick="hamburgerButton();"><i class="fa fa-bars"></i></a>
+           <a href="#" class="btn btn--outlined" onClick="hamburgerButton();"><img height="15px" width="15px" src="./assets/fevicon/hamicon.png" alt=""></a>
             <div style="display: none;" class="dropdown-list" id="dropdown-list">
-              <a class="dropdown--link" href="#main-section">Home</a>
-              <a class="dropdown--link" href="#contagion-section">Contagion</a>
-              <a class="dropdown--link" href="#prevention-section">Prevention</a>
-              <a class="dropdown--link" href="#symptoms-section">Symptoms</a>
-              <a class="dropdown--link active" href="./vitallinks.html">Vital Links</a>
+              <a class="dropdown--link" href="./index.html">Home</a>
+              <a class="dropdown--link" href="./contagion.html">Contagion</a>
+              <a class="dropdown--link" href="./prevention.html">Prevention</a>
+              <a class="dropdown--link" href="./symptoms.html">Symptoms</a>
+              <a class="dropdown--link active" href="#">Vital Links</a>
             </div>
           </div>
           <div class="nav__links ">
-            <a class="link" href="#main-section">Home</a>
-            <a class="link" href="#contagion-section">Contagion</a>
-            <a class="link" href="#prevention-section">Prevention</a>
-            <a class="link" href="#symptoms-section">Symptoms</a>
-            <a class="link active" href="./vitallinks.html">Vital Links</a>
+            <a class="link" href="./index.html">Home</a>
+            <a class="link" href="./contagion.html">Contagion</a>
+            <a class="link" href="./prevention.html">Prevention</a>
+            <a class="link" href="./symptoms.html">Symptoms</a>
+            <a class="link active" href="#">Vital Links</a>
           </div>
         </nav>
       </header>
@@ -126,21 +130,21 @@
               <span class="name">Punjab </span>
             </div>
             <div class="vertical-flex se">
-              <a class="global-link" href="https://www.worldometers.info/coronavirus/">Click Here</a>
-              <a class="global-link" href="https://covid19india.org">Click Here</a>
-              <a class="global-link" href="https://corona.punjab.gov.in/">Click Here</a>
+              <a class="global-link" target="_blank" href="https://www.worldometers.info/coronavirus/">Click Here</a>
+              <a class="global-link" target="_blank" href="https://covid19india.org">Click Here</a>
+              <a class="global-link" target="_blank" href="https://corona.punjab.gov.in/">Click Here</a>
             </div>
           </div>
     </div>
     <div style="padding: 2rem 0;text-align: center;" class="vertical-flex flex-center card animate-left">
-        <div class="heading">
+        <div class="heading" >
             <span>World Health Organisation</span>
           </div>
-          <a class="global-link" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">Click Here</a>
+          <a style="margin-top:20px;" class="global-link" target="_blank" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">Click Here</a>
           <div class="heading">
             <span>MOHFW India</span>
           </div>
-          <a class="global-link" href="https://www.mohfw.gov.in/">Click Here</a>
+          <a style="margin-top:20px;" class="global-link" target="_blank"  href="https://www.mohfw.gov.in/">Click Here</a>
           
     </div>
     </section>
