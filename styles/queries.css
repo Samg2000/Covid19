@@ -32,6 +32,18 @@
     }
 }
 
+@media only screen and (max-width:850px){
+    html{
+        font-size:52%!important;
+    }
+    .grid-normal{
+        grid-template-columns:60% 40%;
+    }
+    .grid-reverse{
+        grid-template-columns:40% 60%;
+    }
+}
+
 @media only screen and (max-width:740px){
     .hamburger-menu{
         display: flex;
@@ -46,7 +58,7 @@
         width: 50%;
     }
     html{
-        font-size:51.5%!important;
+        font-size:50%!important;
     }
     .center-item{
         grid-row: 1/2;
