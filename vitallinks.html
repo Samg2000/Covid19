@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/queries.css">
+    <link rel="stylesheet" href="./styles/animation.css">
+    <link
+      rel="shortcut icon"
+      href="./assets/fevicon/virus.svg"
+      type="image/x-icon"
+    />
+    <title>Usefull Links</title>
+    <style>
+      header {
+        text-align: center;
+      }
+      header > h1 {
+        font-weight: 400;
+        color: #151d41;
+      }
+      .heading {
+        font-size: 3rem;
+        font-weight: 500;
+      }
+      .global-link {
+        outline: 0;
+        position: relative;
+        font-size: 1.2rem;
+        text-decoration: none;
+        /* color: #ee6161; */
+        color: #ee6161;
+        box-shadow: 0 0 15px #ee616138;
+        /* border:1px solid #ee6161; */
+        /* background-color: #ee6161; */
+        padding: 0.5rem 1rem;
+        z-index: 10;
+        border-radius: 50px;
+      }
+      .global-link::before {
+        content: "";
+        position: absolute;
+        background-color: var(--color-accent);
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+        border-radius: 15px;
+        top: 0;
+        left: 0;
+        transform-origin: center;
+        transform: scaleX(0);
+        transition: all 0.2s;
+        -webkit-transform: scaleX(0);
+        -moz-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        -o-transform: scaleX(0);
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+      }
+      .global-link:hover::before {
+        transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+        -moz-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        -o-transform: scaleX(1);
+      }
+      .global-link:hover {
+        color: white;
+      }
+      .name {
+        font-size: 1.6rem;
+      }
+      .se{
+          justify-content: space-evenly;
+      }
+    .grid{
+    height: auto;
+    margin-bottom: 0 !important;
+}
+    </style>
+  </head>
+  <body>
+    <script src="./scripts/main-script.js" type="text/javascript"></script>
+    <header class="animate-bottom">
+        <nav>
+          <div class="logo-container" >
+            <img class="logo__image" src="./assets/fevicon/virus.svg" alt="" />
+            <p class="title">COVID19</p>
+          </div>
+          <div class="hamburger-menu" >
+           <a href="#" class="btn btn--outlined" onClick="hamburgerButton();"><i class="fa fa-bars"></i></a>
+            <div style="display: none;" class="dropdown-list" id="dropdown-list">
+              <a class="dropdown--link" href="#main-section">Home</a>
+              <a class="dropdown--link" href="#contagion-section">Contagion</a>
+              <a class="dropdown--link" href="#prevention-section">Prevention</a>
+              <a class="dropdown--link" href="#symptoms-section">Symptoms</a>
+              <a class="dropdown--link active" href="./vitallinks.html">Vital Links</a>
+            </div>
+          </div>
+          <div class="nav__links ">
+            <a class="link" href="#main-section">Home</a>
+            <a class="link" href="#contagion-section">Contagion</a>
+            <a class="link" href="#prevention-section">Prevention</a>
+            <a class="link" href="#symptoms-section">Symptoms</a>
+            <a class="link active" href="./vitallinks.html">Vital Links</a>
+          </div>
+        </nav>
+      </header>
+    <section class="grid">
+    <div style="padding: 2rem 0;" class="vertical-flex flex-center card animate-right">
+        <div class="heading">
+            <span>statistics</span>
+          </div>
+          <div class="flex">
+            <div style="margin-right: 20px;" class="vertical-flex se">
+              <span class="name">WorldWide </span>
+              <span class="name">India </span>
+              <span class="name">Punjab </span>
+            </div>
+            <div class="vertical-flex se">
+              <a class="global-link" href="https://www.worldometers.info/coronavirus/">Click Here</a>
+              <a class="global-link" href="https://covid19india.org">Click Here</a>
+              <a class="global-link" href="https://corona.punjab.gov.in/">Click Here</a>
+            </div>
+          </div>
+    </div>
+    <div style="padding: 2rem 0;text-align: center;" class="vertical-flex flex-center card animate-left">
+        <div class="heading">
+            <span>World Health Organisation</span>
+          </div>
+          <a class="global-link" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">Click Here</a>
+          <div class="heading">
+            <span>MOHFW India</span>
+          </div>
+          <a class="global-link" href="https://www.mohfw.gov.in/">Click Here</a>
+          
+    </div>
+    </section>
+  </body>
+</html>
