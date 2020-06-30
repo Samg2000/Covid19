@@ -36,6 +36,7 @@
     .full-width{
         width: 80%;
     }
+    
 }
 
 @media only screen and (max-width:850px){
@@ -64,9 +65,10 @@
         width: 50%;
     }
     html{
-        font-size:50%!important;
+        font-size:47%!important;
     }
     .center-item{
         grid-row: 1/2;
     }
+    
 }

@@ -5,41 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/main.css" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <link rel="stylesheet" href="./styles/queries.css">
-    <link rel="stylesheet" href="./styles/animation.css">
+    <link rel="stylesheet" href="./styles/queries.css" />
+    <link rel="stylesheet" href="./styles/animation.css" />
     <link
       rel="shortcut icon"
       href="./assets/fevicon/virus.svg"
       type="image/x-icon"
     />
     <title>Symptoms</title>
+    <style>
+      .custom-grid {
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      /* .wrap>div:not(:first-child){
+        margin-left: 1rem;
+    } */
+      /* .card--padding {
+      padding: 1rem 0;
+    } */
+      ul {
+        list-style-type: none;
+      }
+      .detail .list-item:before{
+        background-color: grey;
+      }
+      .detail .description{
+        color: #151d41c0 !important;
+      }
+      .heading {
+        font-weight: 500;
+        font-size: 3rem;
+        padding: 1.3rem 0;
+        margin: 0;
+      }
+    </style>
   </head>
   <body>
     <script src="./scripts/main-script.js" type="text/javascript"></script>
     <header class="animate-bottom">
-        <nav>
-          <div class="logo-container" >
-            <img class="logo__image" src="./assets/fevicon/virus.svg" alt="" />
-            <p class="title">COVID19</p>
+      <nav>
+        <div class="logo-container">
+          <img class="logo__image" src="./assets/fevicon/virus.svg" alt="" />
+          <p class="title">COVID19</p>
+        </div>
+        <div class="hamburger-menu">
+          <a href="#" class="btn btn--outlined" onClick="hamburgerButton();"
+            ><img
+              height="15px"
+              width="15px"
+              src="./assets/fevicon/hamicon.png"
+              alt=""
+          /></a>
+          <div style="display: none;" class="dropdown-list" id="dropdown-list">
+            <a class="dropdown--link" href="./index.html">Home</a>
+            <a class="dropdown--link" href="./contagion.html">Contagion</a>
+            <a class="dropdown--link" href="./prevention.html">Prevention</a>
+            <a class="dropdown--link active" href="#">Symptoms</a>
+            <a class="dropdown--link" href="./vitallinks.html">Vital Links</a>
           </div>
-          <div class="hamburger-menu" >
-           <a href="#" class="btn btn--outlined" onClick="hamburgerButton();"><img height="15px" width="15px" src="./assets/fevicon/hamicon.png" alt=""></a>
-            <div style="display: none;" class="dropdown-list" id="dropdown-list">
-              <a class="dropdown--link" href="./index.html">Home</a>
-              <a class="dropdown--link" href="./contagion.html">Contagion</a>
-              <a class="dropdown--link" href="./prevention.html">Prevention</a>
-              <a class="dropdown--link active" href="#">Symptoms</a>
-              <a class="dropdown--link" href="./vitallinks.html">Vital Links</a>
-            </div>
-          </div>
-          <div class="nav__links ">
-            <a class="link" href="./index.html">Home</a>
-            <a class="link" href="./contagion.html">Contagion</a>
-            <a class="link" href="./prevention.html">Prevention</a>
-            <a class="link active" href="#">Symptoms</a>
-            <a class="link" href="./vitallinks.html">Vital Links</a>
-          </div>
-        </nav>
-      </header>
+        </div>
+        <div class="nav__links">
+          <a class="link" href="./index.html">Home</a>
+          <a class="link" href="./contagion.html">Contagion</a>
+          <a class="link" href="./prevention.html">Prevention</a>
+          <a class="link active" href="#">Symptoms</a>
+          <a class="link" href="./vitallinks.html">Vital Links</a>
+        </div>
+      </nav>
+    </header>
+    <section style="padding: 2rem 1rem; margin-bottom: 3rem;" class="card animate-right">
+      <span style="margin-left: 2rem;margin-bottom: 2rem;" class="chip">note</span>
+      <ul class="sub-list">
+        <li class="list-item">It is not 100% guaranteed that you are infected from coronavirus even if you have all the symptoms</li>
+        <li class="list-item">Your body may not show any symptoms even if you are infected from coronavirus. (Most Common Situation)</li>
+        </ul>
+    </section>
+    <section
+      style="padding: 2rem 1rem; margin-bottom: 3rem;"
+      class="card animate-left"
+    >
+      <span style="margin-left: 2rem;" class="chip">Symptoms</span>
+      <p style="font-weight: 500; margin-left: 2rem;" class="heading">
+        The main symptoms include:
+      </p>
+      <ul class="sub-list">
+        <li class="list-item">Fever</li>
+        <li class="list-item">Coughing</li>
+        <li class="list-item">Shortness of breath</li>
+        <li class="list-item">Trouble breathing</li>
+        <li class="list-item">Fatigue</li>
+        <li class="list-item">Chills, sometimes with shaking</li>
+        <li class="list-item">Body aches</li>
+        <li class="list-item">Headache</li>
+        <li class="list-item">Sore throat</li>
+        <li class="list-item">Loss of smell or taste</li>
+        <li class="list-item">Nausea</li>
+        <li class="list-item">Diarrhea</li>
+      </ul>
+    </section>
+    <section class="detail">
+      <span class="description"
+        >The virus can lead to pneumonia, respiratory failure, septic shock, and
+        death. Many COVID-19 complications may be caused by a condition known as
+        cytokine release syndrome or a cytokine storm. This is when an infection
+        triggers your immune system to flood your bloodstream with inflammatory
+        proteins called cytokines. They can kill tissue and damage your
+        organs.</span
+      >
+    </section>
+    <section class="detail" style="margin-bottom: 5rem;">
+      <p style="font-weight: 500;" class="description">
+        If you notice the following severe symptoms in yourself or a loved one,
+        get medical help right away:
+      </p>
+      <ul class="sub-list">
+        <li class="list-item">Trouble breathing or shortness of breath</li>
+        <li class="list-item">Ongoing chest pain or pressure</li>
+        <li class="list-item">New confusion</li>
+        <li class="list-item">Can’t wake up fully</li>
+        <li class="list-item">Bluish lips or face</li>
+      </ul>
+    </section>
+    <section
+      style="padding: 2rem 1rem; margin-bottom: 3rem;"
+      class="card"
+    >
+      <span style="margin-left: 2rem;" class="chip">Statistics</span>
+      <p style="font-weight: 500; margin-left: 2rem;" class="heading">
+        According to researchers in China, these were the most common symptoms
+        among people who had COVID-19:
+      </p>
+      <ul class="sub-list">
+        <li class="list-item">Fever 99%</li>
+        <li class="list-item">Fatigue 70%</li>
+        <li class="list-item">Cough 59%</li>
+        <li class="list-item">Lack of appetite 40%</li>
+        <li class="list-item">Body aches 35%</li>
+        <li class="list-item">Shortness of breath 31%</li>
+        <li class="list-item">Mucus/phlegm 27%</li>
+      </ul>
+    </section>
   </body>
 </html>

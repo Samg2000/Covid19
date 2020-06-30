@@ -14,16 +14,14 @@
     />
     <title>Usefull Links</title>
     <style>
-      header {
-        text-align: center;
-      }
-      header > h1 {
-        font-weight: 400;
-        color: #151d41;
+      ul{
+        list-style-type:none ;
+        margin-top: 2rem;
       }
       .heading {
         font-size: 3rem;
         font-weight: 500;
+        /* margin-bottom: 4rem !important; */
       }
       .global-link {
         outline: 0;
@@ -75,19 +73,11 @@
       .global-link:hover {
         color: white;
       }
-      .name {
-        font-size: 1.6rem;
-      }
-      .se{
-          justify-content: space-evenly;
-      }
+     
       .heading{
           margin-bottom: 0 !important;
       }
-    .grid{
-        background: #fff !important;
-    height: auto;
-    margin-bottom: 0 !important;
+
 }
     </style>
   </head>
@@ -118,35 +108,49 @@
           </div>
         </nav>
       </header>
-    <section class="grid">
-    <div style="padding: 2rem 0;" class="vertical-flex flex-center card animate-right">
-        <div class="heading">
-            <span>statistics</span>
-          </div>
-          <div class="flex">
-            <div style="margin-right: 20px;" class="vertical-flex se">
-              <span class="name">WorldWide </span>
-              <span class="name">India </span>
-              <span class="name">Punjab </span>
-            </div>
-            <div class="vertical-flex se">
-              <a class="global-link" target="_blank" href="https://www.worldometers.info/coronavirus/">Click Here</a>
-              <a class="global-link" target="_blank" href="https://covid19india.org">Click Here</a>
-              <a class="global-link" target="_blank" href="https://corona.punjab.gov.in/">Click Here</a>
-            </div>
-          </div>
-    </div>
-    <div style="padding: 2rem 0;text-align: center;" class="vertical-flex flex-center card animate-left">
-        <div class="heading" >
-            <span>World Health Organisation</span>
-          </div>
-          <a style="margin-top:20px;" class="global-link" target="_blank" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">Click Here</a>
-          <div class="heading">
-            <span>MOHFW India</span>
-          </div>
-          <a style="margin-top:20px;" class="global-link" target="_blank"  href="https://www.mohfw.gov.in/">Click Here</a>
-          
-    </div>
-    </section>
+    <section
+    style="padding: 2rem 1rem; margin-bottom: 3rem;"
+    class="card animate-left"
+  >
+    <span style="margin-left: 2rem;" class="chip">Statistics</span>
+    <p style="font-weight: 500; margin-left: 2rem;" class="heading">
+      WorldWide
+    </p>
+    <ul  class="sub-list">
+      <li class="list-item">Worldometers<a style="margin-left: 20px;" class="global-link" target="_blank" href="https://www.worldometers.info/coronavirus/">Click Here</a> </li>
+    </ul>
+    <p style="font-weight: 500; margin-left: 2rem;" class="heading">
+      India
+    </p>
+    <ul class="sub-list">
+      <li class="list-item">Covid19 India<a style="margin-left: 20px;" class="global-link" target="_blank" href="https://covid19india.org">Click Here</a> </li>
+      <li class="list-item">MOHFW (Official)<a style="margin-left: 20px;" class="global-link" target="_blank" href="https://www.mohfw.gov.in/">Click Here</a> </li>
+    </ul>
+    <p style="font-weight: 500; margin-left: 2rem;" class="heading">
+      Punjab
+    </p>
+    <ul class="sub-list">
+      <li class="list-item">Covid19 Punjab<a style="margin-left: 20px;" class="global-link" target="_blank" href="https://corona.punjab.gov.in/">Click Here</a> </li>
+    </ul>
+  </section>
+  <section
+    style="padding: 2rem 1rem; margin-bottom: 3rem;"
+    class="card"
+  >
+    <span style="margin-left: 2rem;" class="chip">Essential Information</span>
+    <p style="font-weight: 500; margin-left: 2rem;" class="heading">
+      WorldWide
+    </p>
+    <ul class="sub-list">
+      <li class="list-item">World Health Organisation<a style="margin-left: 20px;" class="global-link" target="_blank" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">Click Here</a> </li>
+    </ul>
+    <p style="font-weight: 500; margin-left: 2rem;" class="heading">
+      India
+    </p>
+    <ul class="sub-list">
+      
+      <li class="list-item">MOHFW<a style="margin-left: 20px;" class="global-link" target="_blank" href="https://www.mohfw.gov.in/">Click Here</a> </li>
+    </ul>
+  </section>
   </body>
 </html>

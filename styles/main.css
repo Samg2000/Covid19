@@ -210,8 +210,8 @@ header>nav > .nav__links  {
 }
 .grid{
     display: grid;
-    height: 80vh;
-    /* margin-top:100px; */
+    height: 90vh;
+    margin-bottom:50px;
     gap: 3rem;
     grid-template-columns:1fr 1fr ;
 }
@@ -236,6 +236,7 @@ header>nav > .nav__links  {
     background-color: var(--color-accent-faded);
     color: var(--color-accent);
     /* color: #fff; */
+    text-transform: capitalize;
     font-size: 1.4rem;
     font-weight: bold;
     border-radius:50px;
@@ -385,4 +386,7 @@ header>nav > .nav__links  {
 .float-right{
   bottom: 0;
   right: 0;
+}
+.fix-image{
+  width: 80%;
 }
